@@ -1,0 +1,338 @@
+% This is "sig-alternate.tex" V2.1 April 2013
+% This file should be compiled with V2.5 of "sig-alternate.cls" May 2012
+%
+% This example file demonstrates the use of the 'sig-alternate.cls'
+% V2.5 LaTeX2e document class file. It is for those submitting
+% articles to ACM Conference Proceedings WHO DO NOT WISH TO
+% STRICTLY ADHERE TO THE SIGS (PUBS-BOARD-ENDORSED) STYLE.
+% The 'sig-alternate.cls' file will produce a similar-looking,
+% albeit, 'tighter' paper resulting in, invariably, fewer pages.
+%
+% ----------------------------------------------------------------------------------------------------------------
+% This .tex file (and associated .cls V2.5) produces:
+%       1) The Permission Statement
+%       2) The Conference (location) Info information
+%       3) The Copyright Line with ACM data
+%       4) NO page numbers
+%
+% as against the acm_proc_article-sp.cls file which
+% DOES NOT produce 1) thru' 3) above.
+%
+% Using 'sig-alternate.cls' you have control, however, from within
+% the source .tex file, over both the CopyrightYear
+% (defaulted to 200X) and the ACM Copyright Data
+% (defaulted to X-XXXXX-XX-X/XX/XX).
+% e.g.
+% \CopyrightYear{2007} will cause 2007 to appear in the copyright line.
+% \crdata{0-12345-67-8/90/12} will cause 0-12345-67-8/90/12 to appear in the copyright line.
+%
+% ---------------------------------------------------------------------------------------------------------------
+% This .tex source is an example which *does* use
+% the .bib file (from which the .bbl file % is produced).
+% REMEMBER HOWEVER: After having produced the .bbl file,
+% and prior to final submission, you *NEED* to 'insert'
+% your .bbl file into your source .tex file so as to provide
+% ONE 'self-contained' source file.
+%
+% ================= IF YOU HAVE QUESTIONS =======================
+% Questions regarding the SIGS styles, SIGS policies and
+% procedures, Conferences etc. should be sent to
+% Adrienne Griscti (griscti@acm.org)
+%
+% Technical questions _only_ to
+% Gerald Murray (murray@hq.acm.org)
+% ===============================================================
+%
+% For tracking purposes - this is V2.0 - May 2012
+
+
+\documentclass{sig-alternate-05-2015}
+
+%Todd packages and commands
+\usepackage[normalem]{ulem} %for sout  
+\newcommand{\strikeout}[1]{\sout{#1}}
+\newcommand{\quotes}[1]{``#1''}
+\newcommand{\q}[1]{``#1''}
+
+\begin{document}
+
+% Copyright
+\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+
+
+% DOI
+\doi{10.475/123_4}
+
+% ISBN
+\isbn{123-4567-24-567/08/06}
+
+%Conference
+\conferenceinfo{PLDI '13}{June 16--19, 2013, Seattle, WA, USA}
+
+\acmPrice{\$15.00}
+
+%
+% --- Author Metadata here ---
+\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
+%\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
+%\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
+% --- End of Author Metadata ---
+
+\title{The Theory of Sustainable Software Development through Collective Code Ownership}
+
+%
+% You need the command \numberofauthors to handle the 'placement
+% and alignment' of the authors beneath the title.
+%
+% For aesthetic reasons, we recommend 'three authors at a time'
+% i.e. three 'name/affiliation blocks' be placed beneath the title.
+%
+% NOTE: You are NOT restricted in how many 'rows' of
+% "name/affiliations" may appear. We just ask that you restrict
+% the number of 'columns' to three.
+%
+% Because of the available 'opening page real-estate'
+% we ask you to refrain from putting more than six authors
+% (two rows with three columns) beneath the article title.
+% More than six makes the first-page appear very cluttered indeed.
+%
+% Use the \alignauthor commands to handle the names
+% and affiliations for an 'aesthetic maximum' of six authors.
+% Add names, affiliations, addresses for
+% the seventh etc. author(s) as the argument for the
+% \additionalauthors command.
+% These 'additional authors' will be output/set for you
+% without further effort on your part as the last section in
+% the body of your article BEFORE References or any Appendices.
+
+\numberofauthors{3} %  in this sample file, there are a *total*
+% of EIGHT authors. SIX appear on the 'first-page' (for formatting
+% reasons) and the remaining two appear in the \additionalauthors section.
+%
+\author{
+% You can go ahead and credit any number of authors here,
+% e.g. one 'row of three' or two rows (consisting of one row of three
+% and a second row of one, two or three).
+%
+% The command \alignauthor (no curly braces needed) should
+% precede each author name, affiliation/snail-mail address and
+% e-mail address. Additionally, tag each line of
+% affiliation/address with \affaddr, and tag the
+% e-mail address with \email.
+%
+\alignauthor Todd Sedano\\
+       \affaddr{Pivotal}\\
+       \affaddr{3495 Deer Creak Road}\\
+       \affaddr{Palo Alto, CA}\\
+       \email{professor@gmail.com}
+\alignauthor Paul Ralph\\
+       \affaddr{University of Auckland}\\
+       \affaddr{Auckland}\\
+       \affaddr{New Zealand}\\
+       \email{paul@paulralph.name}
+\alignauthor C\'ecile P\'eraire\\
+       \affaddr{Carnegie Mellon Unveristy} \\
+       \affaddr{Silicon Valley Campus}\\
+       \affaddr{Moffett Field, CA 94035, USA}\\
+       \email{cecile.peraire@sv.cmu.edu}
+}
+
+\date{27 January 2016}
+
+\maketitle
+\begin{abstract}
+Context:
+
+Background:
+Objective: 
+Method: Conduct participant-observation of several software development projects at Pivotal. Interview several software engineers and product managers. Iterative research incorporating feedback from several engineers. Review the proposed Pivotal Extension with software engineers and product managers. 
+
+Expected Results: 
+
+Limitations: While the results are highly relevant to Pivotal, the outcomes may not be transferable to other software development organizations in different domains or geographies.
+
+Conclusion: 
+
+\end{abstract}
+
+
+
+%
+% The code below should be generated by the tool at
+% http://dl.acm.org/ccs.cfm
+% Please copy and paste the code instead of the example below. 
+%
+\begin{CCSXML}
+<ccs2012>
+  <concept>
+    <concept_id>10011007.10011074.10011134</concept_id>
+    <concept_desc>Software and its engineering~Collaboration in software development</concept_desc>
+    <concept_significance>500</concept_significance>
+  </concept>
+  <concept>
+    <concept_id>10011007.10011074.10011092</concept_id>
+    <concept_desc>Software and its engineering~Software development techniques</concept_desc>
+    <concept_significance>500</concept_significance>
+  </concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Software and its engineering~Collaboration in software development}
+\ccsdesc[500]{Software and its engineering~Software development techniques}
+
+%
+% End generated code
+%
+
+
+%
+%  Use this command to print the description
+%
+\printccsdesc
+
+% We no longer use \terms command
+%\terms{Theory}
+
+\keywords{Collective code ownership}
+
+%%
+%% Start line numbering here if you want
+%%
+%%\linenumbers
+
+
+
+%
+\input{do-not-edit-contents.tex}
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{table*}[t]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{Sustainable Software Development of software development}
+\label{my-label}
+\begin{tabular}{p{1.1in}p{5.0in}}
+\hline
+purpose            & business sustainability for evolving workforce. This enables a way of working that allows the product to continue evolving while workforce is changing by cross-sharing knowledge and simplifying code so that it is easy to maintain \\ 
+\hline
+mechanism          & shares decision making power on the entire code base for accomplishing a common goal. For each feature, many developers shape the implementation  \\ 
+\hline
+enabling practices & 1. Collective code ownership      \\ 
+                   & 2. Continuous refactorings and sustainable work pace                     \\ 
+                   & 3. Pair programming                                    \\ 
+                   & 4. Rotating developers when context shared    \\ 
+                   & 5. Test Driven Development, Behavior Driven Development     \\ 
+                   & 6. Continuous Integration                 \\ 
+                   & 7. Obtaining context  \\ 
+\hline
+benefits           & Team Benefits                                                                                                                                                                                  \\ 
+                   & - permeates knowledge across the whole team; increasing the amount of shared knowledge and context                                                                                               \\ 
+                   & - leverages whole team’s talents                                                                                                                                                                 \\ 
+                   & - enables and empowers any pair to change any part of code (authority and responsibility)                                                                                                        \\ 
+                   & - anyone can work on anything                                                                                                                                                                    \\ 
+                   & - enables seamless transitions of rotating people on to and off a project                                                                                                                        \\ 
+                   & Product Benefits                                                                                                                                                                               \\ 
+                   & - routine defect detection by many developers reading and augmenting the code                                                                                                                    \\ 
+                   & Code Benefits                                                                                                                                                                                  \\ 
+                   & - increasing discoverability (knowing which class is responsible for something)                                                                                                                  \\ 
+                   & - separating concerns                                                                                                                                                                            \\ 
+                   & - simplifying control flow                                                                                                                                                                       \\ 
+                   & - increasing design consistency                                                                                                                                                                  \\ 
+                   & - increasing flexibility (pliable code allowing more refactorings)                                                                                                                               \\ 
+                   & - increasing readability (understanding how a method works)                                                                                                                                      \\ 
+\hline
+risks              & large team sizes means that it is hard for the team to have shared context as so much parallel work is being done which decreases empowerment                                                  \\ 
+                   & thinking that someone else will improve codebase which means team is not reducing technical debt and increasing code apathy                                                                    \\ 
+                   & naively modifying code without understanding context and severity of changes which introduces defects                                                                                          \\ 
+                   & artificial team stress can affect business sustainability as the team takes on technical debt that decreases sense of ownership                                                                \\ 
+                   & knowledge silos need to be spread amongst the team                                                                                                                                             \\ 
+\hline
+costs              & May be less efficient when two people might work on something simple                                                                                                                           \\ 
+                   & For some individuals, personal ownership might be larger motivator than communal ownership. In these cases, personal ownership may have higher short-term productivity                         \\ 
+                   & Flexible work hours benefit, cherished by many, make business sustainability challenging to implement. Effective pairing and context sharing requires a consistent synchronized schedule       \\ 
+\hline
+indicators that you are doing it wrong   & emerging knowledge silos \\                                                                                                                                                                                                                                   
+\hline
+\end{tabular}
+\end{table*}
+
+
+
+
+
+
+
+
+
+\begin{table*}[]
+\centering
+\caption{Sense of collective code ownership}
+\label{my-label}
+\begin{tabular}{p{1.5in}p{5.6in}}
+
+transitioning into         & onboarding developers switch from \quotes{I made this} (personal ownership) to \quotes{we made this} (communal ownership) pride in workmanship \\ \hline
+fundamental attitude       & enabled by loosely holding personal contributions and recognizing lack of long term individual authorship                                          \\ \hline
+enabled by                 & Sustainable Software Development practices                                                                                                         \\ \hline
+eroded by                  & product apathy,                                                                                                                                    \\
+                           & large team size,                                                                                                                                   \\
+                           & team apathy,                                                                                                                                       \\
+                           & - stakeholders not listening to feedback                                                                                                           \\
+                           & - not understanding why decisions are made                                                                                                         \\
+                           & - not understanding the plan                                                                                                                       \\
+                           & - person burning out                                                                                                                               \\
+                           & code apathy,                                                                                                                                       \\
+                           & low code understanding,                                                                                                                            \\
+                           & assigning blame for mistakes,                                                                                                                      \\
+                           & getting easily blocked,                                                                                                                            \\
+                           & poor onboarding of developers                                                                                                                      \\
+                           & leaving people behind (performance programming)                                                                                                    \\
+                           & personal goals not aligned with team goals                                                                                                         \\
+                           & technical debt                                                                                                                                     \\
+\hline
+signs of healthy ownership & wanting to do the right thing  \\
+                           & sense of caring                                                                                                                                    \\
+                           &                                                                                                                                                    \\
+                           &                                                                                                                                                    \\
+                           &                                                                                                                                                    \\
+                           &                                                                                                                                                    \\
+                           &                                                                                                                                                   
+\end{tabular}
+\end{table*}
+
+
+
+
+
+
+% The following two commands are all you need in the
+% initial runs of your .tex file to
+% produce the bibliography for the citations in your paper.
+\bibliographystyle{abbrv}
+\bibliography{bibliography}  % sigproc.bib is the name of the Bibliography in this case
+% You must have a proper ".bib" file
+%  and remember to run:
+% latex bibtex latex latex
+% to resolve all references
+%
+% ACM needs 'a single self-contained file'!
+%
+
+% That's all folks!
+\end{document}
