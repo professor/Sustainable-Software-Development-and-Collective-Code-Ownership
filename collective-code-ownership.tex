@@ -148,18 +148,18 @@
 
 \maketitle
 \begin{abstract}
-Context:
 
-Background:
-Objective: 
-Method: Conduct participant-observation of several software development projects at Pivotal. Interview several software engineers and product managers. Iterative research incorporating feedback from several engineers. Review the proposed Pivotal Extension with software engineers and product managers. 
+\textif{Context:} Conventional wisdom says that team churn is very disruptive for a team and should be avoided. However, Pivotal projects succeed despite high team churn.  
 
-Expected Results: 
+\textif{Objective:} The purpose of this paper is to understand how Pivotal overcomes team disruption in software development.
 
-Limitations: While the results are highly relevant to Pivotal, the outcomes may not be transferable to other software development organizations in different domains or geographies.
+\textif{Method:} We followed Constructivist Grounded Theory. The primary researcher conducted participant-observation of several software development projects at Pivotal, and interviewed 21 software engineers, designers, and product managers. The researcher iteratively sampled and analyzed until achieving theoretical saturation.
 
-Conclusion: 
+\textif{Results:} This paper introduces the Theory of Sustainable Software Development and its principles, policies, and practices. The practices both remove knowledge silos and caretake the code. The practices both remove knowledge silos and improve the code for pair rotation by caretaking. 
 
+\textif{Limitations:} While the results are highly relevant to Pivotal, the outcomes may not be transferable to other software development organizations with different software development cultures.
+
+\textif{Conclusion:}  The primary benefit to the employer is business agility. The engineering team continues to deliver software week after week, month after month, and survive disruptive events.  The primary benefit to the engineer team is the ability to work on every story, to understand the entire system, and provide teaching opportunities to share one's expertise and to deeper learn subtle parts of the technologies.  Software development continues regardless of changes in team composition.
 \end{abstract}
 
 
@@ -200,7 +200,13 @@ Conclusion:
 % We no longer use \terms command
 %\terms{Theory}
 
-\keywords{Collective code ownership}
+\keywords{
+Extreme Programming,
+Grounded Theory,
+Collective code ownership,
+Sustainable software development
+}
+
 
 %%
 %% Start line numbering here if you want
@@ -209,7 +215,7 @@ Conclusion:
 
 
 
-%
+
 \input{do-not-edit-contents.tex}
 
 
@@ -218,8 +224,76 @@ Conclusion:
 
 
 
+\begin{table*}[]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{Sustainable Software Development}
+\label{practices}
+\begin{tabular}{p{3.0in}|p{3.5in}}
+\hline
+Practice       &     Provides \\
+\hline
+\hline
+Collective code ownership  & Permission to modify any file \\    
+\hline
+Continuous refactorings and sustainable work pace  &  Code Discoverability \\    
+                                                   &  Code Maintainability \\    
+                                                   &  Empowers any pair to pick up any story \\                   
+\hline
+Pair programming and shared hours  &  Joint ownership of code \\                        
+                                   &  Actively removes individual ownership \\                                  
+\hline
+Rotating developers when context shared  &  Context sharing \\  
+\hline
+Test Driven Development,  &  Confidence in refactorings \\   
+Behavior Driven Development  &  Confidence in refactorings \\   
+                             &  Enables pairs to change anything \\   
+\hline
+Live on Master & Increases refactoring opportunities\\
+% Continuous Integration  &  \\     
+% Run tests before pushing code  &  \\               
+% Live on Master & Increases refactoring opportunities\\
+% Promptly Fix Broken Build & \\
+\hline
+Obtaining context & Increases knowledge sharing \\
+\hline
+\end{tabular}
+\end{table*}
 
 
+
+
+\begin{table}[]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{Duration of project}
+\label{my-label}
+\begin{tabular}{|l|}
+\hline
+100\% \\ \hline
+91\%  \\ \hline
+86\%  \\ \hline
+86\%  \\ \hline
+79\%  \\ \hline
+67\%  \\ \hline
+67\%  \\ \hline
+60\%  \\ \hline
+40\%  \\ \hline
+33\%  \\ \hline
+28\%  \\ \hline
+26\%  \\ \hline
+21\%  \\ \hline
+19\%  \\ \hline
+16\%  \\ \hline
+9\%   \\ \hline
+7\%   \\ \hline
+5\%   \\ \hline
+5\%   \\ \hline
+5\%   \\ \hline
+2\%   \\ \hline
+2\%   \\ \hline
+\end{tabular}
+\end{table}
 
 
 
@@ -227,7 +301,7 @@ Conclusion:
 \renewcommand{\arraystretch}{1.3}
 \centering
 \caption{Sustainable Software Development of software development}
-\label{my-label}
+\label{Practicesl}
 \begin{tabular}{p{1.1in}p{5.0in}}
 \hline
 purpose            & business sustainability for evolving workforce. This enables a way of working that allows the product to continue evolving while workforce is changing by cross-sharing knowledge and simplifying code so that it is easy to maintain \\ 
@@ -239,12 +313,12 @@ enabling practices & 1. Collective code ownership      \\
                    & 3. Pair programming                                    \\ 
                    & 4. Rotating developers when context shared    \\ 
                    & 5. Test Driven Development, Behavior Driven Development     \\ 
-                   & 6. Continuous Integration                 \\ 
+                   & 6. Live on Master                 \\ 
                    & 7. Obtaining context  \\ 
 \hline
 benefits           & Team Benefits                                                                                                                                                                                  \\ 
                    & - permeates knowledge across the whole team; increasing the amount of shared knowledge and context                                                                                               \\ 
-                   & - leverages whole team’s talents                                                                                                                                                                 \\ 
+                   & - leverages whole team's talents                                                                                                                                                                 \\ 
                    & - enables and empowers any pair to change any part of code (authority and responsibility)                                                                                                        \\ 
                    & - anyone can work on anything                                                                                                                                                                    \\ 
                    & - enables seamless transitions of rotating people on to and off a project                                                                                                                        \\ 
@@ -284,7 +358,7 @@ indicators that you are doing it wrong   & emerging knowledge silos \\
 \begin{table*}[]
 \centering
 \caption{Sense of collective code ownership}
-\label{my-label}
+\label{Sense}
 \begin{tabular}{p{1.5in}p{5.6in}}
 
 transitioning into         & onboarding developers switch from \quotes{I made this} (personal ownership) to \quotes{we made this} (communal ownership) pride in workmanship \\ \hline
