@@ -1,3 +1,4 @@
+
 \section{Introduction}
 
 Imagine being a software development manager and hearing one of the worst possible pieces of news.  One of your top engineers, Dakota, just gave notice and is moving onto a new opportunity. You might be torn with mixed emotions. On one hand, there is excitement because the new position provides a great career opportunity for someone you respect. On the other hand, you might worry about your project. How is the team going to manage this? You have been investing in this engineer. Your investment and all the engineer's accumulated knowledge and context about the code is walking out the door.  As one of your top performers, Dakota worked on the most important aspects, the trickiest parts, of your system. How long is it going to take others to ramp up on the code that Dakota owned? How is this loss in productivity going to affect future development? 
@@ -6,26 +7,51 @@ This paper introduces the theory of sustainable software development through col
 
 The theory emerged from Grounded Theory, an iterative research method. We collected empirical data from participant observations of an Extreme Programming project at Pivotal and interviews of Pivotal engineers, designers and product managers. As aspects of the theory emerged, we collected additional data to validate and saturate the theory.
 
-In Extreme Programming, Kent Beck distills Collective Ownership practice into \quotes{Anyone on the team can improve any part of the system at any time.} He contrasts Collective Ownership against \quotes{no ownership} and \quotes{individual ownership.} He summarizes, \quotes{In Extreme Programming, everybody takes responsibility for the whole of the system. Not everyone knows every part equally well, although everyone knows something about every part. If a pair is working and they see an opportunity to improve the code, they go ahead and improve it if it makes their life easier.}  \cite{ExtremeProgramming2000} Later, Kent Beck renames Collective Ownership to Shared Code \cite{ExtremeProgramming2004},. 
+In Extreme Programming, Kent Beck distills Collective Ownership practice into \quotes{Anyone on the team can improve any part of the system at any time.} He contrasts Collective Ownership against \quotes{no ownership} and \quotes{individual ownership.} He summarizes, \quotes{In Extreme Programming, everybody takes responsibility for the whole of the system. Not everyone knows every part equally well, although everyone knows something about every part. If a pair is working and they see an opportunity to improve the code, they go ahead and improve it if it makes their life easier.}  \cite{ExtremeProgramming2000} Later, Kent Beck renames Collective Ownership to Shared Code \cite{ExtremeProgramming2004}. 
 
-Our initial core question was: \quotes{What is happening at Pivotal when it comes to software development?} When \quotes{collective code ownership} emerged as a core category, we collected additional sampling to identify which elements were required to enable collective code ownership and which situations would impact a programmer's sense of ownership. The observed project succeeded in spite of high team disruption. This observation leads us to new research questions: \quotes{How does Pivotal overcome team disruption in software development?}
+Our initial core question was: \quotes{What is happening when it comes to software development at the studied organization?} When \quotes{collective code ownership} emerged as a core category, we collected additional sampling to identify which elements were required to enable collective code ownership and which situations would impact a programmer's sense of ownership. The observed project succeeded in spite of high team disruption. This observation leads us to new research questions: \quotes{How does Pivotal overcome team disruption in software development?}
 
-In section \ref{ResearchMethod}, we review how we employed Grounded Theory to derive a theory supported by empirical data. In section \ref{ResearchContext}, we present the research context explaining both the company and project details. In section \ref{Theory}, we describe the theory and how its principles, policies, and practices work together to achieve the observed results. In section \ref{Transitioning}, we examine nuanced issues of transitioning to collective code ownership. In section \ref{TheoryEvaluation}, we evaluate the theory using established criteria for evaluating a grounded theory. In section \ref{RelatedWork}, we position the theory relative to existing literature. In the last sections, we examine threats to research validity, future research, and conclude the research.
+In section \ref{RelatedWork}, we position the theory relative to existing literature. In section \ref{ResearchMethod}, we review how we employed Grounded Theory to derive a theory supported by empirical data. In section \ref{ResearchContext}, we present the research context explaining both the company and project details. In section \ref{Theory}, we describe the theory and how its principles, policies, and practices work together to achieve the observed results. In section \ref{Transitioning}, we examine nuanced issues of transitioning to collective code ownership. In section \ref{TheoryEvaluation}, we evaluate the theory using established criteria for evaluating a grounded theory. In the last sections, we examine threats to research validity, future research, and conclude the research.
+
+
+\section{Related Work}
+\label{RelatedWork}
+In Extreme Programming \cite{ExtremeProgramming2004} Kent Beck describes a set of interdependent practices that manage feature development (much like Scrum \cite{Scrum}), as well as technical practices that facilitate a collaborative team environment.  Extreme Programming comprises 13 primary practices and 11 corollary practices. Many of the practices are dependent on each other.  {In Extreme Programming, everybody takes responsibility for the whole of the system. Not everyone knows every part equally well, although everyone knows something about every part. If a pair is working and they see an opportunity to improve the code, they go ahead and improve it if it makes their life easier}  \cite{ExtremeProgramming2000}.
+
+
+
+The concepts of Lottery Number, Bus Count, Lorry Number, or Truck Number remind management about the effects of disruptive events for a team. Truck Number is, \quotes{The size of the smallest set of people in a project such that, if all of them got hit by a truck, the project would be in trouble.} \cite{WikiTruckNumber}. 
+
+In 1994, James Coplien mentions Truck Number as a risk to his Solo Virtuoso pattern of using only one talented developer to create a software system \cite{Coplien1994}. 
+
+In 2008, Kailash Awati suggests three strategies for increasing Bus Count: reducing complexity, documentation, and cross-training \cite{AwatiBusFactor}. All three strategies are found in Extreme Programming if documentation morphs into easily discoverable, intention revealing code. Little academic research has examined this topic. 
+
+%\subsection{Code ownership}
+%In 2006, Martin Fowler define collective code ownership similarity to Kent Beck \cite{FowlerCodeOwnership} as a contrasting team position to \quotes{strong code ownership} where each file is owned by one person and `\quotes{weak code ownership} where developers can change files but owner keeps an eye on the file since they are responsible for it. 
+
+%Collective Code Ownership requires more than a team saying \quotes{everyone can modify anything}. Instead, we are interested in how much the team feels that they collectively own the code. We shift from a policy statement to a \quotes{sense of collective code ownership.} We define \quotes{sense of collective code ownership} as the degree to which individual members of the team feel collective ownership.  
+
+%This work builds upon the significant accomplishments of Extreme Programming and refines it with other practices. For example, in Extreme Programming, it is possible for a developer to work on the same track of work creating a knowledge silo. This is an undesirable property for collective code ownership. This work introduces an explicit rotation practice.
+
+This research shows that one way to achieve collective code ownership is to enact all of the practices of Sustainable Software Development.
+
+%Todo: This paper looks at ownership in organizations \cite{PierceOwnershipInOrganizations}
 \section{Research Method: Grounded Theory}
 \label{ResearchMethod}
 
-We followed Charmaz' approach to Grounded Theory \cite{Charmaz} which provides an iterative approach to data collection, data coding, and analysis resulting in an emergent theory. The two primary data sources were field notes collected during continuous participant observations of a 7.5 month project and interviews with Pivotal software engineers, designers, and product managers. Interviews were recorded, transcribed, coded, and analyzed using constant comparison. 
+We followed Grounded Theory \cite{Charmaz} which provides an iterative approach to data collection, data coding, and analysis resulting in an emergent theory. We selected Charmaz' approach to Grounded Theory which is constructivist that situates ...
+The two primary data sources were field notes collected during continuous participant observations of a 7.5 month project and interviews with Pivotal software engineers, designers, and product managers. Interviews were recorded, transcribed, coded, and analyzed using constant comparison. 
 
-Grounded Theory immerses the researcher within the context of the research subject from the point of view of the participants. As the research progresses, Grounded Theory allows the researcher to \quotes{incrementally direct the data collection and theoretical ideas.} The theory provides a starting place for inquiry, not a specific goal known at the beginning of the research. As we interact with the data, the data influences how we progress and alters the research direction. When starting a grounded theory research study, the core question is \quotes{What is happening here?}' (Glaser, 1978) \cite{GlaserTheoreticalSensitivity}. Our initial core question was \quotes{What is happening at Pivotal when it comes to software development?}
+Grounded Theory immerses the researcher within the context of the research subject from the point of view of the participants. As the research progresses, Grounded Theory allows the researcher to \quotes{incrementally direct the data collection and theoretical ideas.} The theory provides a starting place for inquiry, not a specific goal known at the beginning of the research. As we interact with the data, the data influences how we progress and alters the research direction. When starting a grounded theory research study, the core question is, \quotes{What is happening here?}' (Glaser, 1978) \cite{GlaserTheoreticalSensitivity}. Our initial core question was, \quotes{What is happening at Pivotal when it comes to software development?}
 
 \subsection{Participants}
 The primary researcher interviewed 21 engineers, product managers, and designers who had experience with Pivotal's software development process. Designers identify user needs through user interviews; create and validate user experience with mockups; determine the visual design of a product; and support engineering during implementation. Product managers are responsible for identifying and prioritizing features, converting features into stories, and prioritizing stories in a backlog.  Participants were not paid for their time. 
 \subsection{Data Collection}
 The primary researcher relied on \quotes{intensive interviews} which Charmaz summarizes as \quotes{open-ended yet directed, shaped yet emergent, and paced yet unrestricted} \cite{Charmaz}. The technique relies on open-ended questions. The purpose is for the researcher to enter into the participant's personal perspective within the context of the research question. The interviewer needs to abandon assumptions and their own personal presumptions in order to understand and explore the interviewee's perspective. Charmaz \cite{Charmaz} contrasts intensive interviews from informational interviews which endeavor to collect accurate `facts' and investigative interviews that attempt to reveal hidden intentions or expose practices and policies. 
  
-The interviews were open-ended explorations starting with the question, ``please draw on this sheet of paper, your view of Pivotal's software development process." The interviewer specifically didn't force initial topics and merely followed the path of the interviewee. 
+The interviews were open-ended explorations starting with the question, \quotes{Please draw on this sheet of paper, your view of Pivotal's software development process.} The interviewer specifically didn't force initial topics and merely followed the path of the interviewee. 
 
-While exploring new emergent core categories, whenever possible, the researcher initiated subsequent interviews with a goal of not forcing the issue. For example, ``please draw your feelings about the code" often resulted in conversations about code ownership. 
+While exploring new emergent core categories, whenever possible, the researcher initiated subsequent interviews with a goal of not forcing the issue. For example, \quotes{Please draw your feelings about the code} often resulted in conversations about code ownership. 
 
 After the interview, the interview was transcribed into a Word document with timecode stamps for each segment.
 
@@ -33,7 +59,7 @@ In addition to collecting data from interviews, the primary researcher collected
 \subsection{Data Analysis}
 The primary researcher followed line-by-line coding as recommended by Charmaz \cite{Charmaz}. The line-by-line coding helps the researcher slow down and examine for nuanced interactions in the data. Based upon Charmaz's advice, the primary researcher adopted a coding scheme that was simple, direct, analytic, and spontaneous.  
 
-After the initial coding, another researcher reviewed the initial codes while reading the transcripts and listening to the audio recording. During a weekly research collaboration meeting, any concerns were discussed and addressed. During these meetings, we recorded and transcribed into grounded theory memos any discussions about analysis or understanding the codes. Recording the sessions mitigated Glazer's concerns about missing possible memos or insights that are verbally discussed. \cite{GlaserTheoreticalSensitivity}
+After the initial coding, another researcher reviewed the initial codes while reading the transcripts and listening to the audio recording. During a weekly research collaboration meeting, any concerns were discussed and addressed. During these meetings, we recorded and transcribed into grounded theory memos any discussions about analysis or understanding the codes. Recording the sessions mitigated Glazer's concerns about missing possible memos or insights that are verbally discussed \cite{GlaserTheoreticalSensitivity}.
 
 As data was collected and coded, the researcher placed codes into a spreadsheet. The researcher followed constant comparison which resulted in focused codes.  The researcher compared new codes to existing codes for emergence of new categories. Only ideas shared by multiple interviewees earned their way into focused codes and subsequent analysis. The primary researcher periodically audited each category by comparing the codes to each other and verifying the cohesion of the category. For complex categories, the codes were printed onto index cards, arranged and re-arranged until the emergence of logical categories.  The researcher captured the analysis of codes, examinations of theoretical plausibility, and insights in memos. 
 
@@ -192,11 +218,11 @@ $\bullet$ Avoid Technical Debt      & $\bullet$  Knowledge Pollination    & Supp
 \end{table*}
 
 \subsubsection{Collective Code Ownership}
-Collective code ownership conveys that any developer on the team can improve any part of the system at any time cite{ExtremeProgramming2004}. Everyone is responsible for the the whole system. 
+Collective code ownership conveys that any developer on the team can improve any part of the system at any time \cite{ExtremeProgramming2004}. Everyone is responsible for the the whole system. 
 
 At Pivotal, every developer is empowered to work on any part of the system and is encouraged to refactor any code section to improve its quality as needed, especially when code discoverability is an issue.
 
-An organization saying \quotes{anyone can modify any piece the code} is not sufficient to achieve the desired result of collective code ownership. Achieving collective code ownership requires a set of enabling practices. These enabling practices aim at removing knowledge silos and taking good care of the code, as described in the following sections.
+An organization saying, \quotes{Anyone can modify any piece the code} is not sufficient to achieve the desired result of collective code ownership. Achieving collective code ownership requires a set of enabling practices. These enabling practices aim at removing knowledge silos and taking good care of the code, as described in the following sections.
 
 Removing collective code ownership makes sustainable software development challenging. Every line of code written via strong ownership creates a knowledge silo. Code reviews is a mitigation strategy with an asynchronous delay. When the delay is too long, merging code into master becomes problematic which then places pressure to avoid Continuous Refactoring.  
 
@@ -219,6 +245,8 @@ A possible mitigation strategy would be to adopt core work hours, working on sim
 \subsubsection{Avoid Technical Debt}
 
 Technical Debt refers to delaying needed technical work when technical shortcuts are taken, usually in pursuit of calendar-driven software schedules \cite{McConnellTechnicalDebt}.  Continuous Refactoring (as described under the Continuous Refactoring practice) is one way to prevent technical debt from accumulating. When a team employs continuous refactoring, the team refines a code base towards simple design, intention revealing code, and discoverable code. 
+
+At Pivotal, when the team implements a feature, the team desires to build it well. A pair tends to create well crafted code by avoiding shortcuts and short term fixes. Even with changing features or a changing product vision, the team strives to have well engineered code. The team codes for the \quotes{present} by building the simplest solution for the current story. The team eschews over engineering for potential future features. The team avoids technical debt by building the best solution for the moment at hand.  
 
 When a team is pressured to finish work by a deadline, the team might be tempted to focus on feature delivery, take on technical debt, and stop refactoring. When a team delays refactoring and takes on technical debt, the code becomes harder to work with, which in turn makes it harder for developers to rotate onto that part of the code base. The pair making the decision to skip refactoring is causing future pain for the next pair to work with this part of the code. 
 
@@ -257,12 +285,12 @@ On Project Quattuor the product manager suggested that the team deliver more sto
 %at pivotal
 \textbf{At pivotal:} Whenever a knowledge silo begins to emerge, the team actively fights against it and tries to spread that knowledge around through pair rotation. 
 
-Some teams rotate based on who has paired with who and try to pair with the person they \quotes{least recently paired with} (basically an LRU strategy). This strategy does not clearly articulate the need for knowledge transfer. Developers do ask to be rotated back onto a track that they enjoy working on without realizing the potential cost to the team. 
+Most teams rotate based on who has paired with who and try to pair with the person they \quotes{least recently paired with} (basically an LRU strategy). This strategy does not clearly articulate the need for knowledge transfer. Developers do ask to be rotated back onto a track that they enjoy working on without realizing the potential cost to the team. 
 
-Some teams are experimenting with rotating the \quotes{last person to work on that track} strategy. The goal of the developer who will leave the track tomorrow is to empower the new pivot to own the track the next day. When the rotation happens the next day, the second pivot is asked, \quotes{Was enough context shared with you?} If the answer is no, then the pair continues longer. This provides a feedback loop on how well the team is transferring knowledge.  
+Some teams are experimenting with rotating the last person to work on that track. The goal of the developer who will leave the track tomorrow is to empower the new pivot to own the track the next day. When the rotation happens the next day, the second pivot is asked, \quotes{Was enough context shared with you?} If the answer is no, then the pair continues longer. This provides a feedback loop on how well the team is transferring knowledge.  
 
 %removing
-\textbf{Anti-pattern:} Removing this practice means that developers can work on the same part of the code base, developing deep context, individual code ownership, and knowledge silos. One of the interviewees worked at Xtreme Labs (a company that follows Extreme Programming and was bought by Pivotal in 2013) where developers could be paired for more than a month working on only one part of the system. 
+\textbf{Anti-pattern:} Removing this practice means that developers can work on the same part of the code base, developing deep context, individual code ownership, and knowledge silos. One of the interviewees worked at Xtreme Labs (a company that follows Extreme Programming and acquired by Pivotal in 2013) where developers could be paired for more than a month working on only one part of the system. This lack of pair rotation led to building deep knowledge silos. 
 
 Ideally developers work on the next, non-blocked story at the top of the backlog. When developers start skipping down the backlog, it can be an indication that they might not have enough context to work on any story. On Project Quattro, there was a knowledge silo with a complex bug with an obsolete technology that only a handful of people understood. Often developers would skip over stories and bugs related to that technology. At one point the product manager reminded the team to keep  \quotes{working from the top of backlog.}
 
@@ -279,23 +307,22 @@ Sometimes a developer will want to see a story through to completion. Maybe they
 \textbf{Purpose:} Knowledge Pollination contributes to spreading knowledge among the team as illustrated in Figure 3.
 
 %at pivotal
-\textbf{At pivotal:}
+\textbf{At pivotal:} 
+Daily standup, 2) tracker
+3) While working on a story, a pair may discover that they are missing some key context that prevents them from efficiently proceeding. If the issue is about the acceptance criteria for a story, they clarify with the product manager. If the issue is about the code base, the pair can ask the people who recently worked on that section of code, or ask the entire team.  To determine who to ask, the pair may remember who did what at stand-up, look through tracker to see who worked on a story, or check out source code version history (e.g. git annotate). Two, four, and six  person teams tend to have collective memory of who worked on which features. A 10 person team might need to be active in finding the answer to the question. Osmotic communication helps when the person who worked on a story overhears another pair discussing a class.
 
-While working on a story, a pair may discover that they are missing some key context that prevents them from efficiently proceeding. If the issue is about the acceptance criteria for a story, they clarify with the product manager. If the issue is about the code base, the pair can ask the people who recently worked on that section of code, or ask the entire team.  To determine who to ask, the pair may remember who did what at stand-up, look through tracker to see who worked on a story, or check out source code version history (e.g. git annotate). Two, four, and six  person teams tend to have collective memory of who worked on which features. A 10 person team might need to be active in finding the answer to the question. Osmotic communication helps when the person who worked on a story overhears another pair discussing a class.
-
-In Chong's ethnographic study of an Extreme Programming team compared to a traditional team \cite{ChongNominum}, she observed that ``transmission of awareness information is a relatively effortless act in the XP environment” as it is consistent with teams that work in highly collaborative work. 
+In Chong's ethnographic study of an Extreme Programming team compared to a traditional team \cite{ChongNominum}, she observed that \quotes{transmission of awareness information is a relatively effortless act in the XP environment.} This observation is consistent with teams that work in highly collaborative work. 
 
 Instead of thrashing, a pair interrupts another pair to gain the needed information. Thus interruptions are encouraged as it makes the entire team more efficient as knowledge is pollinated across the team. 
 
 %removing
-\textbf{Anti-pattern:} Removing this practice means less knowledge sharing opportunities leading to time wasted in order to acquire the knowledge through other means.
-.... that people would need to relearn the context and answering questions such as \quotes{what is the code doing?}, \quotes{why was it built this way?}, and \quotes{what are the business concerns?}. On a small scale, it just unnecessary waste. On a large scale, this is the problem we are trying to solve.
+\textbf{Anti-pattern:} An organization that provides little opportunity to share knowledge leads to time wasted as developers must acquire the knowledge through other means or end up reinventing the wheel.
 \subsection{Practices for Caretaking the Code}
 \subsubsection{Test Driven Development, Behavior Driven Development}
 %what
 \textbf{Description:} In Test Driven Development developers write unit tests before coming up with a design and before writing code. In Behavior Driven Development, developers implement acceptance tests before coming up with a design and writing code.  Most lines of production code is tested before the production code is written. The software's design emerges from the tests and subsequent refactorings.
 
-In XP 1.0, Kent Beck describes his corresponding \quotes{Testing} practice as developers writing \quotes{automated unit tests} and implementing customer provided \quotes{functional tests} for story acceptance. In XP 2.0, Kent Beck refines these ideas as \quotes{Test-first programming.} 
+In ExtremeProgramming Kent Beck describes his corresponding \quotes{Testing} practice as developers writing \quotes{automated unit tests} and implementing customer provided \quotes{functional tests} for story acceptance \cite{ExtremeProgramming2000}. Later, Kent Beck refines these ideas as \quotes{Test-first programming} \cite{ExtremeProgramming2004}. 
 
 %why
 \textbf{Purpose:} This practice creates a safety net and empowers a pair to have the courage to make modifications to the code base. This enables any pair to be able to pick up any story. Continuous refactorings results in easier to modify tests.
@@ -365,7 +392,7 @@ Running a Continuous Integration box and having long running branches is an anti
 \label{Transitioning}
 Some individuals derive their sense of value, worth, and identity from what they produce. Since Sustainable Software Development requires a shift from individual ownership to collective ownership, the transition should not be taken lightly. The transition asks people to shift how they value and perceive themselves. 
 
-A recent hire to Pivotal described his initial experience as \quotes{seeing my work slowly removed from app.} When reflecting on the daily rotation, this developer recalled occasions of wanting to hang onto the work.  In time, his attitude of \quotes{I want to see it through} evolved into \quotes{someone else is going to take over and they're going to do fine. I can move onto something else and that's okay.} 
+A recent hire to Pivotal described his initial experience as, \quotes{Seeing my work slowly removed from app.} When reflecting on the daily rotation, this developer recalled occasions of wanting to hang onto the work.  In time, his attitude of \quotes{I want to see it through} evolved into, \quotes{Someone else is going to take over and they're going to do fine. I can move onto something else and that's okay.} 
 
 The developer learned the rhythm of story rotation and developed trust in his team: the rest of the team will do a good job. Developers rolling off a story in flight can look in anticipation to see what the next pair produces and see how they solved the problem. 
 
@@ -373,7 +400,8 @@ Eventually, team members recognize the lack of long term individual authorship, 
 
 Some developers transition easily and immediately see the benefits of being able to modify any part of the code base and quickly shift from \quotes{I made this} (personal ownership) to \quotes{we made this} (collective ownership.)
 
-The developer transitions from the role of owner to the role of steward or caretaker. In one interview, a Pivot was struggling to describe their relationship with the code on a very challenging project and settled in on the caretaker metaphor : \quotes{Sometimes I kind of feel like a janitor to it.  Maybe caretaker would be better.  Yeah, probably caretaker. I feel like a janitor just cleans up messes but a caretaker like also makes things better.}
+The developer transitions from the role of owner to the role of steward or caretaker. In one interview, a Pivot was struggling to describe their relationship with the code on a very challenging project and settled in on the caretaker metaphor: \quotes{Sometimes I kind of feel like a janitor to [the code base].  Maybe caretaker would be better.  Yeah, probably caretaker. I feel like \ldots a janitor just cleans up messes, but a caretaker makes things better.}
+
 
 Our ability to control something influences our sense of ownership, and ownership influences our sense of identity. 
 
@@ -388,11 +416,11 @@ Day 3: (A D), (B C)
 
 One Pivotal engineer uses improv games and collaboration games to help teams to practice letting go of control, trusting the team for the final product, and learning to be pleasantly surprised by what emerges. In this regard, sustainable software development is an ensemble performance. 
 
-When a team achieves a sense of collective ownership, the magic happens: \quotes{people are a lot more flexible all across the board with changing things or accepting feedback or collaborating} and \quotes{we want the best possible product that's best for users \ldots we just want the best thing out there.} Then the team can say \quotes{hey this is our code.}
+When a team achieves a sense of collective ownership, the magic happens: \quotes{People are a lot more flexible all across the board with changing things or accepting feedback or collaborating} and \quotes{We want the best possible product that's best for users \ldots we just want the best thing out there.} Then the team can say \quotes{Hey, this is our code!}
 \section{Theory Evaluation}
 \label{TheoryEvaluation}
 
-In assessing a Grounded Theory research study, Charmaz identifies four criteria for evaluating a grounded theory study: credibility, (\quotes{is there sufficient data}), originality, (\quotes{do the categories offer new insights}), resonance (\quotes{does the theory make sense to participants}), usefulness (\quotes{does the theory offer useful interpretations}) \cite{StolGTinSE}. 
+In assessing a Grounded Theory research study, Charmaz identifies four criteria for evaluating a grounded theory study: credibility, (\quotes{Is there sufficient data?}), originality, (\quotes{Do the categories offer new insights?}), resonance (\quotes{Does the theory make sense to participants?}), usefulness (\quotes{Does the theory offer useful interpretations?}) \cite{StolGTinSE}. 
 
 \begin{itemize}
 \item 
@@ -419,29 +447,6 @@ On tours where potential clients see how Pivotal builds software, Pivotal has us
 \textbf{Researcher bias:} a risk of the participant-observer technique is that the researcher may lose perspective and become biased by being a member of the team. An outside observer might see something the researcher missed. We mitigated this risk by recording interviews and with a colleague reviewing the coding process.
 
 \textbf{Prior knowledge bias:} with grounded theory prior knowledge can aid the researcher in looking at interesting research questions or create difficulties in blinding the researcher about possible explanations \cite{GlaserIssues}. We mitigated this risk with a colleague reviewing the coding process. The work does leverage the rich history of Extreme Programming.
-
-\section{Related Work}
-\label{RelatedWork}
-In Extreme Programming \cite{ExtremeProgramming2004} Kent Beck describes a set of interdependent practices that manage feature development (much like Scrum \cite{Scrum}), as well as technical practices that facilitate a collaborative team environment.  Extreme Programming comprises 13 primary practices and 11 corollary practices. Many of the practices are dependent on each other.  {In Extreme Programming, everybody takes responsibility for the whole of the system. Not everyone knows every part equally well, although everyone knows something about every part. If a pair is working and they see an opportunity to improve the code, they go ahead and improve it if it makes their life easier.}  \cite{ExtremeProgramming2000}
-
-
-
-The concepts of Lottery Number, Bus Count, Lorry Number, or Truck Number remind management about the effects of disruptive events for a team. Truck Number, \quotes{is the size of the smallest set of people in a project such that, if all of them got hit by a truck, the project would be in trouble.} \cite{WikiTruckNumber}. 
-
-In 1994, James Coplien mentions Truck Number as a risk to his Solo Virtuoso pattern of using only one talented developer to create a software system \cite{Coplien1994}. 
-
-In 2008, Kailash Awati suggests three strategies for increasing Bus Count: reducing complexity, documentation, and cross-training \cite{AwatiBusFactor}. All three strategies are found in Extreme Programming if documentation morphs into easily discoverable, intention revealing code. Little academic research has examined this topic. 
-
-%\subsection{Code ownership}
-%In 2006, Martin Fowler define collective code ownership similarity to Kent Beck \cite{FowlerCodeOwnership} as a contrasting team position to \quotes{strong code ownership} where each file is owned by one person and `\quotes{weak code ownership} where developers can change files but owner keeps an eye on the file since they are responsible for it. 
-
-%Collective Code Ownership requires more than a team saying \quotes{everyone can modify anything}. Instead, we are interested in how much the team feels that they collectively own the code. We shift from a policy statement to a \quotes{sense of collective code ownership.} We define \quotes{sense of collective code ownership} as the degree to which individual members of the team feel collective ownership.  
-
-%This work builds upon the significant accomplishments of Extreme Programming and refines it with other practices. For example, in Extreme Programming, it is possible for a developer to work on the same track of work creating a knowledge silo. This is an undesirable property for collective code ownership. This work introduces an explicit rotation practice.
-
-This research shows that one way to achieve collective code ownership is to enact all of the practices of Sustainable Software Development.
-
-%Todo: This paper looks at ownership in organizations \cite{PierceOwnershipInOrganizations}
 \section{Future Research}
 Developers, designers, and product managers all have different goals for their role. In future work,  we plan to examine how collective ownership is driven by different factors for designers, developers, and product managers.
 
@@ -454,12 +459,15 @@ Further research is necessary to determine the optimal team size for collective 
 \section{Conclusions}
 This work refines the understanding of Extreme Programming by adding a few practices (like pair rotation) and aligns several of the technical practices towards the business goal of sustainability.
 
-The primary benefit to the employer is business agility. The engineering team continues to deliver software week after week, month after month, and survive cataclysmic events. Things do not fall apart when the superstar developer leaves. People can go on vacation whenever they need to because features or components are not critically tied to a particular individual. The team leverages the whole team's talents. This removes bottlenecks of \quotes{only Pat can work on these features.} Critical feature work can be parallelized since anyone can work on the feature, as opposed to an individual code owner. 
+The primary benefit to the employer is business agility. The engineering team continues to deliver software week after week, month after month, and survive cataclysmic events. Things do not fall apart when the superstar developer leaves. People can go on vacation whenever they need to because features or components are not critically tied to a particular individual. The team leverages the whole team's talents. This removes bottlenecks of, \quotes{Only Pat can work on these features.} Critical feature work can be parallelized since anyone can work on the feature, as opposed to an individual code owner. 
 
 The primary benefit to the engineer team is the ability to work on every story, to understand the entire system, teaching opportunities to share one's expertise and to deeper learn subtle parts of the technologies. 
 
 The primary cost is a shift from individual code ownership to collective code ownership. For some engineers, their sense of value and self-worth is derived from direct code ownership, and thus transitions to Sustainable Software Development should not be taken lightly. Sustainable Software Development works well with collaborative individuals and may not be suited for people who like to work on their own. Sustainable Software Development works when team members have the maturity to loosely hold temporary personal contributions understanding that the team may enhance any aspect of the product.
 
-Sustainable Software Development is suited for companies that must routinely deliver value to their customers or stakeholders. Some companies are better positioned to withstand a quarter where nothing happens (from an external perspective) or  \quotes{the forgotten two years of management waste} as described by one manager in this study. Hopefully, competitors have not caught up or surpassed the organization during the lost time. Both Pivotal Labs as a consulting practice and the growth of Pivotal's Cloud Foundry towards market dominance, depend on the continual development of features. Neither can afford to falter and both implement Sustainable Software Development.
+Sustainable Software Development is suited for companies that must routinely deliver value to their customers or stakeholders. Some companies are better positioned to withstand a quarter where nothing happens (from an external perspective) or  \quotes{The forgotten two years of management waste} as described by one manager in this study. Hopefully, competitors have not caught up or surpassed the organization during the lost time. Both Pivotal Labs as a consulting practice and the growth of Pivotal's Cloud Foundry towards market dominance, depend on the continual development of features. Neither can afford to falter and both implement Sustainable Software Development.
 
 Sustainable Software Development is that software development continues at a regular pace regardless of who is on the team, or rather regardless of changes in team composition.
+
+Thank you to Rob Mee, David Goudreau, Ryan Richard, and Zach Larson for making this research possible. Thank you to Karina Sils for making Figure \ref{DeveloperStaffing} using Sketch.
+
