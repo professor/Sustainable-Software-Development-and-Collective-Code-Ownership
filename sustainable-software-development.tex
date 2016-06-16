@@ -51,12 +51,12 @@
 
 %Todd packages and commands
 \usepackage[normalem]{ulem} %for sout  
+\usepackage[all]{nowidow} %for no orphan lines
 \newcommand{\strikeout}[1]{\sout{#1}}
 \newcommand{\quotes}[1]{``#1''}
 \newcommand{\participantQuote}[1]{\textit{``#1''}}
 \newcommand{\oneColumnWidth}{3.4in}
 \newcommand{\twoColumnWidth}{7.1in}
-
 
 \begin{document}
 
@@ -69,22 +69,15 @@
 %\setcopyright{cagov}
 %\setcopyright{cagovmixed}
 
-
-
-% DOI
-\doi{10.475/123_4}
-
-% ISBN
-\isbn{123-4567-24-567/08/06}
-
-%Conference
-\conferenceinfo{PLDI '13}{June 16--19, 2013, Seattle, WA, USA}
-
+\CopyrightYear{2016} 
+\setcopyright{acmlicensed}
+\conferenceinfo{ESEM '16,}{September 08 - 09, 2016, Ciudad Real, Spain}
+\isbn{978-1-4503-3691-8/16/06}
 \acmPrice{\$15.00}
+\doi{http://dx.doi.org/10.1145/2915970.2916002}
 
 %
 % --- Author Metadata here ---
-\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
 %\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
 %\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
 % --- End of Author Metadata ---
@@ -157,13 +150,13 @@
 
 \textit{Objective:} The purpose of this paper is to understand how to develop software effectively, even in the face of team disruption.
 
-\textit{Method:} We followed Constructivist Grounded Theory. The primary researcher conducted participant-observation of several projects at Pivotal (a software development company), and interviewed 21 software engineers, interaction designers, and product managers. The researcher iteratively sampled and analyzed the collected data until achieving theoretical saturation.
+\textit{Method:} We followed Constructivist Grounded Theory. We conducted participant-observation of several projects at Pivotal (a software development company), and interviewed 21 software engineers, interaction designers, and product managers. The researchers iteratively sampled and analyzed the collected data until achieving theoretical saturation.
 
 \textit{Results:} This paper introduces a descriptive theory of Sustainable Software Development. The theory encompasses principles, policies, and practices aiming at removing knowledge silos and improving code quality (including discoverability and readability), hence leading to development sustainability. 
 
 \textit{Limitations:} While the results are highly relevant to the observed projects at Pivotal, the outcomes may not be transferable to other software development organizations with different software development cultures.
 
-\textit{Conclusion:} The theory refines and extends the understanding of Extreme Programming by adding a few principles, policies, and practices (like the unique Overlapping Pair Rotation practice) and aligning these principles, policies, and practices towards the business goal of sustainability. 
+\textit{Conclusion:} The theory refines and extends our understanding of Extreme Programming by adding new principles, policies, and practices (including Overlapping Pair Rotation) and aligning them with the business goal of sustainability. 
 
 \end{abstract}
 
